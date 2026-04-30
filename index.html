@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Alina Enache — Medic Ginecolog | Consultații Ginecologice</title>
+    <title>Dr. Alina Enache — Ginecolog Craiova | Medic Ginecolog la Ginecho Craiova</title>
 
     <!-- SEO Meta -->
-    <meta name="description" content="Dr. Alina Enache — medic ginecolog cu experiență în consultații ginecologice, ecografie obstetricală, monitorizarea sarcinii și screening prenatal. Programează o consultație!">
-    <meta name="keywords" content="ginecolog, medic ginecolog, consultație ginecologică, ecografie obstetricală, sarcină, screening prenatal, Alina Enache, obstetrică, ginecologie">
+    <meta name="description" content="Cauți un ginecolog în Craiova? Dr. Alina Enache, medic ginecolog la Ginecho Craiova, oferă consultații ginecologice, ecografie obstetricală, monitorizarea sarcinii și screening prenatal, cu empatie și atenție personalizată.">
+    <meta name="keywords" content="ginecolog craiova, ginecolog bun, recomandare ginecolog, medic ginecolog craiova, consultație ginecologică craiova, ecografie obstetricală craiova, sarcină, screening prenatal, Alina Enache, obstetrică, ginecologie">
     <meta name="author" content="Dr. Alina Enache">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.alinaenache.ro/">
+    <meta name="geo.region" content="RO-DJ">
+    <meta name="geo.placename" content="Craiova">
+    <link rel="canonical" href="https://dr-enache-alina.ro/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.alinaenache.ro/">
-    <meta property="og:title" content="Dr. Alina Enache — Medic Ginecolog">
-    <meta property="og:description" content="Consultații ginecologice, ecografie obstetricală, monitorizarea sarcinii și screening prenatal. Profesionalism și grijă pentru sănătatea femeii.">
-    <meta property="og:image" content="https://www.alinaenache.ro/images/og-image.jpg">
+    <meta property="og:url" content="https://dr-enache-alina.ro/">
+    <meta property="og:title" content="Dr. Alina Enache — Ginecolog Craiova | Ginecho Craiova">
+    <meta property="og:description" content="Medic ginecolog în Craiova, recomandat pentru consultații ginecologice, monitorizarea sarcinii, ecografie obstetricală și screening prenatal la Ginecho Craiova.">
+    <meta property="og:image" content="https://dr-enache-alina.ro/images/og-image.jpg">
     <meta property="og:locale" content="ro_RO">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dr. Alina Enache — Medic Ginecolog">
-    <meta name="twitter:description" content="Consultații ginecologice, ecografie obstetricală, monitorizarea sarcinii și screening prenatal.">
-    <meta name="twitter:image" content="https://www.alinaenache.ro/images/og-image.jpg">
+    <meta name="twitter:title" content="Dr. Alina Enache — Ginecolog Craiova">
+    <meta name="twitter:description" content="Consultații ginecologice, monitorizarea sarcinii și ecografie obstetricală la Ginecho Craiova.">
+    <meta name="twitter:image" content="https://dr-enache-alina.ro/images/og-image.jpg">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -32,14 +34,23 @@
         "@context": "https://schema.org",
         "@type": "Physician",
         "name": "Dr. Alina Enache",
-        "description": "Medic ginecolog — consultații ginecologice, ecografie obstetricală, monitorizarea sarcinii și screening prenatal.",
+        "description": "Medic ginecolog în Craiova, la Ginecho Craiova — consultații ginecologice, ecografie obstetricală, monitorizarea sarcinii și screening prenatal.",
         "medicalSpecialty": "Gynecology",
-        "url": "https://www.alinaenache.ro",
-        "email": "contact@alinaenache.ro",
+        "worksFor": {
+            "@type": "MedicalOrganization",
+            "name": "Ginecho Craiova"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Craiova"
+        },
+        "url": "https://dr-enache-alina.ro",
+        "email": "alinadica34@gmail.com",
+        "telephone": "+40 785 965 495",
         "sameAs": [
-            "https://instagram.com/",
-            "https://facebook.com/",
-            "https://tiktok.com/"
+            "https://www.instagram.com/dr.enache_alina/",
+            "https://www.facebook.com/profile.php?id=61583317232089",
+            "https://www.tiktok.com/@dr.enache.alina"
         ]
     }
     </script>
@@ -110,6 +121,7 @@
             border-radius: 50%;
             border: 4px solid rgba(255,255,255,0.5);
             object-fit: cover;
+            object-position: center top;
             margin-bottom: 24px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.18);
             background: linear-gradient(135deg, #c8e6e9 0%, #97d2d8 100%);
@@ -126,6 +138,13 @@
             font-size: 1rem;
             font-weight: 300;
             opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .hero .clinic-note {
+            font-size: 0.95rem;
+            font-weight: 500;
+            opacity: 0.92;
             margin-bottom: 28px;
         }
 
@@ -297,6 +316,7 @@
         .gallery-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-auto-flow: dense;
             gap: 12px;
             max-width: 600px;
             margin: 0 auto;
@@ -307,6 +327,7 @@
             overflow: hidden;
             position: relative;
             aspect-ratio: 1;
+            cursor: zoom-in;
         }
 
         .gallery-item img {
@@ -321,6 +342,63 @@
         .gallery-item.wide {
             grid-column: span 2;
             aspect-ratio: 2/1;
+        }
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(9, 28, 31, 0.88);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            z-index: 1000;
+        }
+
+        .lightbox[hidden] {
+            display: none;
+        }
+
+        .lightbox-content {
+            position: relative;
+            width: min(100%, 980px);
+            max-height: 100%;
+        }
+
+        .lightbox-image {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 18px;
+            box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+            background: #ffffff;
+        }
+
+        .lightbox-caption {
+            color: rgba(255,255,255,0.92);
+            text-align: center;
+            margin-top: 14px;
+            font-size: 0.92rem;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 42px;
+            height: 42px;
+            border: 0;
+            border-radius: 50%;
+            background: #ffffff;
+            color: var(--dark);
+            font-size: 1.5rem;
+            line-height: 1;
+            cursor: pointer;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        }
+
+        body.lightbox-open {
+            overflow: hidden;
         }
 
         /* ─── Articles / Publications ─── */
@@ -381,7 +459,18 @@
             margin-bottom: 14px;
         }
 
+        .articles-list-status {
+            text-align: center;
+            color: var(--text-light);
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: var(--shadow);
+        }
+
         .article-body .read-more {
+            background: none;
+            border: 0;
             font-size: 0.85rem;
             font-weight: 500;
             color: var(--primary);
@@ -389,9 +478,23 @@
             align-items: center;
             gap: 4px;
             transition: gap 0.3s ease;
+            cursor: pointer;
+            padding: 0;
         }
 
         .article-body .read-more:hover { gap: 8px; }
+
+        .article-full-text {
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(30,150,163,0.15);
+            color: var(--text);
+            white-space: pre-line;
+        }
+
+        .article-full-text[hidden] {
+            display: none;
+        }
 
         /* ─── Testimonials ─── */
         .testimonials {
@@ -539,27 +642,30 @@
 
 <!-- ════════════════ HERO ════════════════ -->
 <section class="hero">
-    <div class="hero-photo placeholder" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#c8e6e9,#97d2d8);">
-        <svg width="64" height="64" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v2h20v-2c0-3.33-6.67-5-10-5z"/></svg>
-    </div>
+    <img class="hero-photo" src="pictures/profile_picture.jpg" alt="Portret Dr. Alina Enache">
     <h1>Dr. Alina Enache</h1>
-    <p class="subtitle">Medic Ginecolog — Obstetrică & Ginecologie</p>
+    <p class="subtitle">Medic Ginecolog — Obstetrică & Ginecologie la Ginecho Craiova</p>
+    <p class="clinic-note">Consultații, monitorizarea sarcinii și ecografii realizate în cadrul Ginecho Craiova.</p>
 
     <nav class="socials">
+        <!-- Phone -->
+        <a href="tel:+40785965495" aria-label="Telefon">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.47a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .59 3.68 1 1 0 0 1-.25 1.01z"/></svg>
+        </a>
         <!-- Email -->
-        <a href="mailto:contact@alinaenache.ro" aria-label="Email">
+        <a href="mailto:alinadica34@gmail.com" aria-label="Email">
             <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
         </a>
         <!-- Instagram -->
-        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a href="https://www.instagram.com/dr.enache_alina/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
         </a>
         <!-- Facebook -->
-        <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=61583317232089" target="_blank" rel="noopener" aria-label="Facebook">
             <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
         </a>
         <!-- TikTok -->
-        <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
+        <a href="https://www.tiktok.com/@dr.enache.alina" target="_blank" rel="noopener" aria-label="TikTok">
             <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.9 2.9 0 0 1 .88.14V9.01a6.34 6.34 0 0 0-.88-.07 6.35 6.35 0 1 0 6.35 6.35v-7.1a8.19 8.19 0 0 0 3.75.92V5.69a4.84 4.84 0 0 1-1-.01v3.45a8.19 8.19 0 0 1-3.75-.92v7.1a6.35 6.35 0 0 1-12.7 0 6.35 6.35 0 0 1 7.23-6.28v3.52a2.9 2.9 0 0 0-.88-.14 2.89 2.89 0 1 0 2.88 2.89V2h3.45v.44a4.83 4.83 0 0 0 3.77 4.25v3.45z"/></svg>
         </a>
     </nav>
@@ -571,8 +677,9 @@
         <h2>Despre mine</h2>
     </div>
     <div class="about-content reveal">
-        <p>Sunt medic specialist în obstetrică-ginecologie, pasionată de sănătatea femeii în toate etapele vieții. De la consultații ginecologice de rutină la monitorizarea sarcinii și screening prenatal, fiecare pacientă beneficiază de atenție individualizată și empatie.</p>
-        <p>Utilizez echipamente ecografice de ultimă generație și protocoale validate internațional pentru a oferi diagnostic precis și tratamente eficiente.</p>
+        <p>Sunt medic specialist în obstetrică-ginecologie, pasionată de sănătatea femeii în toate etapele vieții. În activitatea mea din cadrul Ginecho Craiova, de la consultații ginecologice de rutină la monitorizarea sarcinii și screening prenatal, fiecare pacientă beneficiază de atenție individualizată și empatie.</p>
+        <p>Ca medic și mamă, înțeleg mai bine emoțiile, întrebările și nevoia de siguranță care apar atât în timpul sarcinii, cât și în momentele importante legate de sănătatea ginecologică.</p>
+        <p>Utilizez echipamente ecografice de ultimă generație și protocoale validate internațional pentru a oferi diagnostic precis și tratamente eficiente. Multe paciente ajung la mine din recomandare, în căutarea unui ginecolog bun în Craiova care să combine profesionalismul cu o abordare calmă și umană.</p>
     </div>
 </section>
 
@@ -580,7 +687,7 @@
 <section class="section services">
     <div class="section-title reveal">
         <h2>Specializări</h2>
-        <p>Servicii de ginecologie și obstetrică oferite cu profesionalism și aparatură modernă.</p>
+        <p>Servicii de ginecologie și obstetrică oferite cu profesionalism și aparatură modernă la Ginecho Craiova.</p>
     </div>
     <div class="services-grid">
         <div class="service-card reveal">
@@ -618,29 +725,61 @@
 <section class="section gallery">
     <div class="section-title reveal">
         <h2>Galerie foto</h2>
-        <p>Momente din cabinetul de ginecologie, ecografii și participări la congrese de obstetrică.</p>
+        <p>Imagini reale din cabinet, din timpul ecografiilor și din activitatea profesională desfășurată la Ginecho Craiova și la congrese medicale.</p>
     </div>
     <div class="gallery-grid">
-        <div class="gallery-item wide reveal">
-            <div class="placeholder ph1" style="width:100%;height:100%;">Cabinet ginecologie</div>
+        <div class="gallery-item wide reveal" tabindex="0" role="button" aria-label="Deschide imaginea de la congres medical">
+            <img src="pictures/poza_congres3.jpeg" alt="Prezentare susținută în cadrul unui congres medical" loading="lazy">
         </div>
-        <div class="gallery-item reveal">
-            <div class="placeholder ph2" style="width:100%;height:100%;">Congres obstetrică</div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide imaginea consultației ecografice">
+            <img src="pictures/consult_eco.jpeg" alt="Consultație ecografică în cabinet" loading="lazy">
         </div>
-        <div class="gallery-item reveal">
-            <div class="placeholder ph3" style="width:100%;height:100%;">Ecograf</div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide imaginea ecografiei 3D">
+            <img src="pictures/ecografie_3d.jpg" alt="Imagine ecografie 3D" loading="lazy">
         </div>
-        <div class="gallery-item reveal">
-            <div class="placeholder ph4" style="width:100%;height:100%;">Consultație</div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide imaginea cabinetului de consultații">
+            <img src="pictures/poza_cabinet1.jpeg" alt="Cabinet de consultații ginecologice" loading="lazy">
         </div>
-        <div class="gallery-item reveal">
-            <div class="placeholder ph5" style="width:100%;height:100%;">Ecografie 3D/4D</div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide imaginea biroului medical">
+            <img src="pictures/poza_cabinet2.jpeg" alt="Birou medical din cabinet" loading="lazy">
         </div>
-        <div class="gallery-item wide reveal">
-            <div class="placeholder ph6" style="width:100%;height:100%;">Echipă medicală</div>
+        <div class="gallery-item wide reveal" tabindex="0" role="button" aria-label="Deschide imaginea de la prezentarea medicală">
+            <img src="pictures/poza_congres2.jpeg" alt="Participare la congres cu prezentare medicală" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide imaginea ecografului din cabinet">
+            <img src="pictures/poza_cabinet3.jpeg" alt="Ecograf și zonă de examinare din cabinet" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide imaginea din sala de conferințe">
+            <img src="pictures/poza_congres1.jpeg" alt="Prezență la congres în sala de conferințe" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide portretul din cabinet">
+            <img src="pictures/selfie.jpeg" alt="Portret din cabinetul medical" loading="lazy">
+        </div>
+        <div class="gallery-item wide reveal" tabindex="0" role="button" aria-label="Deschide fotografia echipei medicale">
+            <img src="pictures/team1.jpeg" alt="Echipa medicala in cabinet" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide a doua fotografie a echipei medicale">
+            <img src="pictures/team2.jpeg" alt="Membri ai echipei medicale" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide a treia fotografie a echipei medicale">
+            <img src="pictures/team3.jpeg" alt="Fotografie de grup cu echipa medicala" loading="lazy">
+        </div>
+        <div class="gallery-item wide reveal" tabindex="0" role="button" aria-label="Deschide a patra fotografie a echipei medicale">
+            <img src="pictures/team4.jpeg" alt="Echipa medicala la Ginecho Craiova" loading="lazy">
+        </div>
+        <div class="gallery-item reveal" tabindex="0" role="button" aria-label="Deschide fotografia de profil a medicului">
+            <img src="pictures/profile_picture.jpg" alt="Fotografie de profil Dr. Alina Enache" loading="lazy">
         </div>
     </div>
 </section>
+
+<div class="lightbox" id="gallery-lightbox" hidden>
+    <div class="lightbox-content">
+        <button type="button" class="lightbox-close" id="gallery-lightbox-close" aria-label="Închide imaginea mărită">×</button>
+        <img class="lightbox-image" id="gallery-lightbox-image" alt="">
+        <p class="lightbox-caption" id="gallery-lightbox-caption"></p>
+    </div>
+</div>
 
 <!-- ════════════════ ARTICLES ════════════════ -->
 <section class="section articles">
@@ -648,43 +787,8 @@
         <h2>Articole și publicații</h2>
         <p>Informații utile despre sarcină, ginecologie și sănătatea femeii.</p>
     </div>
-    <div class="articles-list">
-        <article class="article-card reveal">
-            <div class="placeholder ph1" style="width:100%;height:200px;">Control ginecologic</div>
-            <div class="article-body">
-                <span class="article-tag">Prevenție</span>
-                <h3>De ce este important controlul ginecologic anual</h3>
-                <p>Un control ginecologic regulat poate depista din timp afecțiuni precum chisturile ovariene, fibroamele uterine sau leziunile precanceroase cervicale. Nu amâna programarea!</p>
-                <a href="#" class="read-more">Citește mai mult →</a>
-            </div>
-        </article>
-        <article class="article-card reveal">
-            <div class="placeholder ph3" style="width:100%;height:200px;">Ecografie morfologică</div>
-            <div class="article-body">
-                <span class="article-tag">Sarcină</span>
-                <h3>Ecografia morfologică — ghid complet pentru viitoare mame</h3>
-                <p>Ecografia morfologică din trimestrul II evaluează dezvoltarea fetală și depistează eventuale anomalii. Află când se face și cum te pregătești.</p>
-                <a href="#" class="read-more">Citește mai mult →</a>
-            </div>
-        </article>
-        <article class="article-card reveal">
-            <div class="placeholder ph5" style="width:100%;height:200px;">Sarcină sănătoasă</div>
-            <div class="article-body">
-                <span class="article-tag">Obstetrică</span>
-                <h3>Primul trimestru de sarcină — sfaturi esențiale</h3>
-                <p>Acid folic, alimentație echilibrată și primele investigații necesare. Ce trebuie să știi în primele 12 săptămâni de sarcină pentru tine și bebelușul tău.</p>
-                <a href="#" class="read-more">Citește mai mult →</a>
-            </div>
-        </article>
-        <article class="article-card reveal">
-            <div class="placeholder ph2" style="width:100%;height:200px;">HPV & prevenție</div>
-            <div class="article-body">
-                <span class="article-tag">Prevenție</span>
-                <h3>Infecția HPV și screeningul cervical — ce trebuie să știi</h3>
-                <p>Testul HPV și Papanicolau sunt esențiale în prevenirea cancerului de col uterin. Află intervalul recomandat pentru screening și opțiunile de vaccinare.</p>
-                <a href="#" class="read-more">Citește mai mult →</a>
-            </div>
-        </article>
+    <div class="articles-list" id="articles-list">
+        <div class="articles-list-status reveal">Articolele se încarcă...</div>
     </div>
 </section>
 
@@ -707,6 +811,18 @@
             <p>„Am fost la ecografia morfologică și mi-a explicat cu răbdare fiecare detaliu despre dezvoltarea bebelușului. Un medic ginecolog dedicat, cu o abordare modernă!”</p>
             <div class="author">— Andreea T.</div>
         </div>
+        <div class="testimonial-card reveal">
+            <p>„Am ajuns pentru un control ginecologic complet și test Babeș-Papanicolau, iar doamna doctor a fost extrem de calmă și empatică. Mi-a explicat fiecare pas, fără grabă, și am plecat mult mai liniștită după consultație.”</p>
+            <div class="author">— Elena M.</div>
+        </div>
+        <div class="testimonial-card reveal">
+            <p>„În primul trimestru de sarcină am avut multe emoții, dar la consultație și ecografie am primit explicații clare și multă răbdare. Doamna doctor Alina Enache este foarte atentă, caldă și face pacientele să se simtă în siguranță.”</p>
+            <div class="author">— Cristina A.</div>
+        </div>
+        <div class="testimonial-card reveal">
+            <p>„Am venit pentru dureri pelvine și cicluri neregulate, iar investigațiile au fost făcute atent, cu mult tact. Mi-a oferit un plan clar de analize și tratament, iar modul empatic în care mi-a vorbit a contat enorm pentru mine.”</p>
+            <div class="author">— Diana R.</div>
+        </div>
     </div>
 </section>
 
@@ -714,25 +830,30 @@
 <section class="section contact">
     <div class="section-title reveal">
         <h2>Contact</h2>
-        <p>Programează o consultație ginecologică sau trimite-mi un mesaj.</p>
+        <p>Programează o consultație ginecologică la Ginecho Craiova sau trimite-mi un mesaj.</p>
     </div>
     <div class="contact-inner reveal">
+        <p>Activitatea medicală se desfășoară în cadrul Ginecho Craiova, pe bază de programare.</p>
         <div class="contact-links">
-            <a class="contact-link" href="mailto:contact@alinaenache.ro">
+            <a class="contact-link" href="mailto:alinadica34@gmail.com">
                 <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
-                contact@alinaenache.ro
+                alinadica34@gmail.com
             </a>
-            <a class="contact-link" href="https://instagram.com/" target="_blank" rel="noopener">
+            <a class="contact-link" href="tel:+40785965495">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.72 11.72 0 0 0 3.68.59 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.47a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .59 3.68 1 1 0 0 1-.25 1.01z"/></svg>
+                0785965495
+            </a>
+            <a class="contact-link" href="https://www.instagram.com/dr.enache_alina/" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
                 Instagram
             </a>
-            <a class="contact-link" href="https://facebook.com/" target="_blank" rel="noopener">
+            <a class="contact-link" href="https://www.facebook.com/profile.php?id=61583317232089" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
                 Facebook
             </a>
-            <a class="contact-link" href="https://tiktok.com/" target="_blank" rel="noopener">
+            <a class="contact-link" href="https://www.tiktok.com/@dr.enache.alina" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.9 2.9 0 0 1 .88.14V9.01a6.34 6.34 0 0 0-.88-.07 6.35 6.35 0 1 0 6.35 6.35v-7.1a8.19 8.19 0 0 0 3.75.92V5.69a4.84 4.84 0 0 1-1-.01v3.45a8.19 8.19 0 0 1-3.75-.92v7.1a6.35 6.35 0 0 1-12.7 0 6.35 6.35 0 0 1 7.23-6.28v3.52a2.9 2.9 0 0 0-.88-.14 2.89 2.89 0 1 0 2.88 2.89V2h3.45v.44a4.83 4.83 0 0 0 3.77 4.25v3.45z"/></svg>
-                TikTok
+                @dr.enache.alina
             </a>
         </div>
     </div>
@@ -743,10 +864,19 @@
     <p>&copy; 2026 Dr. Alina Enache. Toate drepturile rezervate.</p>
 </footer>
 
-<!-- ════════════════ JS: Scroll Reveal ════════════════ -->
+<!--
+    Pentru un articol nou:
+        1. Adauga un fisier .txt in folderul "articles"
+        2. Ruleaza scriptul build-articles.ps1 (click dreapta -> Run with PowerShell)
+        3. Deschide index.html — articolele vor fi incarcate automat, fara server
+
+    Fisierul "articles/articles.js" este generat automat si nu trebuie editat manual.
+-->
+<script src="articles/articles.js"></script>
+
+<!-- ════════════════ JS: Scroll Reveal + Articles ════════════════ -->
 <script>
     (function() {
-        var reveals = document.querySelectorAll('.reveal');
         var observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
@@ -756,7 +886,143 @@
             });
         }, { threshold: 0.15 });
 
-        reveals.forEach(function(el) { observer.observe(el); });
+        function observeReveals(root) {
+            var reveals = (root || document).querySelectorAll('.reveal');
+            reveals.forEach(function(el) {
+                if (el.dataset.revealBound === 'true') {
+                    return;
+                }
+
+                el.dataset.revealBound = 'true';
+                observer.observe(el);
+            });
+        }
+
+        function escapeHtml(value) {
+            return value
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function getArticleTitle(fileName) {
+            return fileName.replace(/\.txt$/i, '');
+        }
+
+        function renderArticle(article) {
+            var safeTitle = escapeHtml(article.title);
+            var safeDescription = escapeHtml(article.description || 'Descriere indisponibilă.');
+            var safeFullText = escapeHtml(article.fullText || article.description || 'Conținut indisponibil.');
+
+            return [
+                '<article class="article-card reveal">',
+                '    <div class="article-body">',
+                '        <span class="article-tag">Articol</span>',
+                '        <h3>' + safeTitle + '</h3>',
+                '        <p>' + safeDescription + '</p>',
+                '        <button type="button" class="read-more" aria-expanded="false">Citește mai mult →</button>',
+                '        <div class="article-full-text" hidden>' + safeFullText + '</div>',
+                '    </div>',
+                '</article>'
+            ].join('');
+        }
+
+        function bindArticleToggles(root) {
+            var buttons = root.querySelectorAll('.read-more');
+
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var fullText = button.nextElementSibling;
+                    var isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                    button.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+                    button.textContent = isExpanded ? 'Citește mai mult →' : 'Arată mai puțin ↑';
+                    fullText.hidden = isExpanded;
+                });
+            });
+        }
+
+        function bindGalleryLightbox() {
+            var lightbox = document.getElementById('gallery-lightbox');
+            var lightboxImage = document.getElementById('gallery-lightbox-image');
+            var lightboxCaption = document.getElementById('gallery-lightbox-caption');
+            var lightboxClose = document.getElementById('gallery-lightbox-close');
+            var galleryItems = document.querySelectorAll('.gallery-item');
+
+            function closeLightbox() {
+                lightbox.hidden = true;
+                document.body.classList.remove('lightbox-open');
+                lightboxImage.removeAttribute('src');
+                lightboxImage.alt = '';
+                lightboxCaption.textContent = '';
+            }
+
+            function openLightbox(image) {
+                lightboxImage.src = image.src;
+                lightboxImage.alt = image.alt;
+                lightboxCaption.textContent = image.alt;
+                lightbox.hidden = false;
+                document.body.classList.add('lightbox-open');
+            }
+
+            galleryItems.forEach(function(item) {
+                var image = item.querySelector('img');
+                if (!image) {
+                    return;
+                }
+
+                item.addEventListener('click', function() {
+                    openLightbox(image);
+                });
+
+                item.addEventListener('keydown', function(event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        openLightbox(image);
+                    }
+                });
+            });
+
+            lightboxClose.addEventListener('click', closeLightbox);
+
+            lightbox.addEventListener('click', function(event) {
+                if (event.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && !lightbox.hidden) {
+                    closeLightbox();
+                }
+            });
+        }
+
+        function renderArticles(articles) {
+            var articlesList = document.getElementById('articles-list');
+
+            articlesList.innerHTML = articles.map(renderArticle).join('');
+            bindArticleToggles(articlesList);
+            observeReveals(articlesList);
+        }
+
+        function renderArticleError() {
+            var articlesList = document.getElementById('articles-list');
+
+            articlesList.innerHTML = '<div class="articles-list-status reveal">Articolele nu au putut fi încărcate. Ruleaza build-articles.ps1 pentru a regenera fisierul articles/articles.js.</div>';
+            observeReveals(articlesList);
+        }
+
+        observeReveals(document);
+        bindGalleryLightbox();
+
+        if (Array.isArray(window.ARTICLES) && window.ARTICLES.length > 0) {
+            renderArticles(window.ARTICLES);
+        } else {
+            renderArticleError();
+        }
     })();
 </script>
 
